@@ -688,16 +688,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4522672549452401999, guid: 83a6bd25ce5f1d244bf2b295019d80ea,
-        type: 3}
-      propertyPath: NoiseModule.strength.scalar
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4522672549452401999, guid: 83a6bd25ce5f1d244bf2b295019d80ea,
-        type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83a6bd25ce5f1d244bf2b295019d80ea, type: 3}
 --- !u!4 &1636939025421609634 stripped
