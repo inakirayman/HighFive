@@ -13,6 +13,7 @@ public class TileManager : MonoBehaviour
 
     public float ZSpawn = -9;
     public float TileLenght = 3;
+    
 
     public int NumberOfTIles =20    ;
 
@@ -20,8 +21,8 @@ public class TileManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i  = 0; i < NumberOfTIles; i++)
-        SpawnTile(0,0,0);
+        for (int i = 0; i < NumberOfTIles; i++)
+            SpawnTile(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class TileManager : MonoBehaviour
     {
         if(Player.position.z - TileLenght *3 > ZSpawn - (NumberOfTIles * TileLenght))
         {
-            SpawnTile(0,0,0);
+            SpawnTile(Random.Range(0, StreetTiles.Length), Random.Range(0, SidewalkLeft.Length), Random.Range(0, SidewalkRight.Length));
             DeleteTile();
         }
     }
@@ -55,9 +56,14 @@ public class TileManager : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if(Player != null)
+        {
+            Gizmos.DrawLine(transform.position, Player.position);
+        }
+
 
         Vector3 pos = new Vector3(0, 0.5f, ((NumberOfTIles * 3) / 2)-9);
-        Vector3 size = new Vector3(9, 1, NumberOfTIles * 3);
+        Vector3 size = new Vector3(9, 1, NumberOfTIles * TileLenght);
         Gizmos.DrawWireCube(pos, size);
     }
 
