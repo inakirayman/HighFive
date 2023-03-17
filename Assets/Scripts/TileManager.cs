@@ -53,6 +53,14 @@ public class TileManager : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmos()
+    {
+
+        Vector3 pos = new Vector3(0, 0.5f, ((NumberOfTIles * 3) / 2)-9);
+        Vector3 size = new Vector3(9, 1, NumberOfTIles * 3);
+        Gizmos.DrawWireCube(pos, size);
+    }
+
 
 
 }
