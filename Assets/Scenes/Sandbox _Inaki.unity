@@ -518,13 +518,9 @@ MonoBehaviour:
   StreetTiles:
   - {fileID: 8987477146340979311, guid: 0a5db69fd28438d4c8cedd844dcaddf7, type: 3}
   SidewalkRight:
-  - {fileID: 3663029390057534770, guid: 3c01c25bf191cdb42b8281f990377a87, type: 3}
-  - {fileID: 2976914921808726081, guid: faf3dad01a43c4c4ab844146ac1a4e3f, type: 3}
-  - {fileID: 4807268040843456287, guid: 0698da773c535804fa5008fa86fff43a, type: 3}
+  - {fileID: 5417916488992306187, guid: 69ff25f4cf6eceb4e896cc63513dca2e, type: 3}
   SidewalkLeft:
-  - {fileID: 3663029390057534770, guid: 3c01c25bf191cdb42b8281f990377a87, type: 3}
-  - {fileID: 2976914921808726081, guid: faf3dad01a43c4c4ab844146ac1a4e3f, type: 3}
-  - {fileID: 4807268040843456287, guid: 0698da773c535804fa5008fa86fff43a, type: 3}
+  - {fileID: 5417916488992306187, guid: 69ff25f4cf6eceb4e896cc63513dca2e, type: 3}
   ActiveTiles: []
   Player: {fileID: 14866874}
   ZSpawn: -9
