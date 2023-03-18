@@ -9,6 +9,9 @@ public class PlayerControllerUITEST : MonoBehaviour
     private Rigidbody rb; // The rigidbody component attached to the character.
     private bool isGrounded = false; // Whether or not the character is touching the ground.
 
+    public int CoinValue = 1;
+    public int Multiplier = 1;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -32,14 +35,21 @@ public class PlayerControllerUITEST : MonoBehaviour
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isGrounded = false;
         }
-    }
 
-    void OnCollisionEnter(Collision other)
+        UIController.Instance.IncreaseScore((int)movement.z, Multiplier);
+    }
+    private void OnTriggerEnter(Collider other)
     {
         // Check if the character is touching the ground.
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+
+        if (other.gameObject.CompareTag("Coins"))
+        {
+            Destroy(other.gameObject);
+            UIController.Instance.IncreaseCoins(CoinValue);
         }
     }
 }
