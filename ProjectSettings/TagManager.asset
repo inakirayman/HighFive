@@ -5,11 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacles
-<<<<<<< Updated upstream
   - Coins
-=======
   - Ground
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
@@ -18,12 +15,8 @@ TagManager:
   - Water
   - UI
   - Obstacles
-<<<<<<< Updated upstream
   - Pickups
-=======
   - Ground
->>>>>>> Stashed changes
-  - 
   - 
   - 
   - 

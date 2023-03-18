@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1419192751707701034}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Street_Tileset_01
   m_TagString: Ground
   m_Icon: {fileID: 0}
