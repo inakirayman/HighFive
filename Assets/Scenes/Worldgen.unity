@@ -147,12 +147,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14866873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.646, z: 0}
+  m_LocalPosition: {x: 0, y: 5.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1745073361}
-  - {fileID: 1102566855}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -189,6 +188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 188873918}
+  - {fileID: 1102566855}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JumpForce: 5
+  LaneSwapSpeed: 10
   _movement: {x: 0, y: 0, z: 0}
 --- !u!114 &115412424
 MonoBehaviour:
@@ -575,11 +576,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102566852}
   m_LocalRotation: {x: 0.14671506, y: -0, z: -0, w: 0.9891788}
-  m_LocalPosition: {x: 0, y: 2.19, z: -2.67}
+  m_LocalPosition: {x: 0, y: 1.606, z: -5.885}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 14866874}
+  m_Father: {fileID: 115412421}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 16.873, y: 0, z: 0}
 --- !u!114 &1102566856
