@@ -165,7 +165,6 @@ GameObject:
   m_Component:
   - component: {fileID: 115412421}
   - component: {fileID: 115412422}
-  - component: {fileID: 115412425}
   - component: {fileID: 115412424}
   - component: {fileID: 115412423}
   m_Layer: 0
@@ -295,20 +294,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!136 &115412425
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115412419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &188873917
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +305,7 @@ GameObject:
   - component: {fileID: 188873918}
   - component: {fileID: 188873921}
   - component: {fileID: 188873920}
+  - component: {fileID: 188873922}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -392,6 +378,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188873917}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &188873922
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188873917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &470559884
 GameObject:
   m_ObjectHideFlags: 0
