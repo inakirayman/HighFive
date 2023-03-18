@@ -51,5 +51,10 @@ public class PlayerControllerUITEST : MonoBehaviour
             Destroy(other.gameObject);
             UIController.Instance.IncreaseCoins(CoinValue);
         }
+
+        if (other.gameObject.CompareTag("Obstacles"))
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }
