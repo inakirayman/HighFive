@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         var pos = transform.position;
+        if(_isSwapingLanes)
         _rigidbody.MovePosition(Vector3.MoveTowards(pos, new Vector3(xPos, pos.y, pos.z),Time.deltaTime*LaneSwapSpeed));
         
     }
