@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2236070317299693769}
   - component: {fileID: 4101909902537100291}
   - component: {fileID: 3940944062285386780}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Sidewalk_Tile
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 1123149526692383413}
   - component: {fileID: 2914618145496186495}
   - component: {fileID: 2751469774702650976}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Sidewalk_Tile
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2262144108498489349}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: SidewalkR_Tileset_00
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 7176099807435497562}
   - component: {fileID: 4932100787793941648}
   - component: {fileID: 5345690726190861455}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Sidewalk_Tile
   m_TagString: Ground
   m_Icon: {fileID: 0}

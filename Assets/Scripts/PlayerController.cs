@@ -5,13 +5,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public float WalkSpeed = 6;
     public float JumpForce = 5;
     public float LaneSwapSpeed = 10;
-    
+
+    [Header("Ground Check")]
+    public float PlayerHeight;
+    public LayerMask GroundMask;
+    private bool _isGrounded;
 
 
-    
     private Rigidbody _rigidbody;
     
 
@@ -28,14 +31,25 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        _isGrounded = Physics.Raycast(transform.position, Vector3.down, PlayerHeight * 0.5f + 0.2f, GroundMask);
+
+        
+
         if (_isSwapingLanes & transform.position.x == xPos) _isSwapingLanes = false;
     }
 
     private void FixedUpdate()
     {
+      
+
         var pos = transform.position;
-        if(_isSwapingLanes)
+        _rigidbody.MovePosition(pos + new Vector3(0, 0, WalkSpeed * Time.deltaTime));
+        if (_isSwapingLanes)
         _rigidbody.MovePosition(Vector3.MoveTowards(pos, new Vector3(xPos, pos.y, pos.z),Time.deltaTime*LaneSwapSpeed));
+
+
+       
+            //(new Vector3(0, 0, WalkSpeed), ForceMode.Force);
         
     }
 
@@ -43,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.performed)  
+        if (context.performed & _isGrounded)  
         _rigidbody.AddForce(transform.up * JumpForce, ForceMode.Impulse);
     }
 

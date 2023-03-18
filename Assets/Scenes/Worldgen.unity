@@ -165,12 +165,11 @@ GameObject:
   m_Component:
   - component: {fileID: 115412421}
   - component: {fileID: 115412422}
-  - component: {fileID: 115412425}
   - component: {fileID: 115412424}
   - component: {fileID: 115412423}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -205,7 +204,7 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &115412423
@@ -220,8 +219,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb42a3cb05320a47996ac37502bc366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WalkSpeed: 6
   JumpForce: 5
   LaneSwapSpeed: 10
+  PlayerHeight: 2
+  GroundMask:
+    serializedVersion: 2
+    m_Bits: 256
   _movement: {x: 0, y: 0, z: 0}
 --- !u!114 &115412424
 MonoBehaviour:
@@ -281,25 +285,15 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 8c4e780d-cf8e-41e6-80e5-f19a0eadef2f
     m_ActionName: Player/MoveLeft[/Keyboard/a]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d8ab73ce-a4b2-4519-b3e9-d986486b2038
+    m_ActionName: Player/Slide[/Keyboard/s,/Keyboard/downArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!136 &115412425
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 115412419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &188873917
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,6 +305,7 @@ GameObject:
   - component: {fileID: 188873918}
   - component: {fileID: 188873921}
   - component: {fileID: 188873920}
+  - component: {fileID: 188873922}
   m_Layer: 0
   m_Name: Model
   m_TagString: Untagged
@@ -383,6 +378,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188873917}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &188873922
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188873917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &470559884
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +758,7 @@ MonoBehaviour:
   SidewalkLeft:
   - {fileID: 5417916488992306187, guid: 69ff25f4cf6eceb4e896cc63513dca2e, type: 3}
   ActiveTiles: []
-  Player: {fileID: 14866874}
+  Player: {fileID: 115412421}
   ZSpawn: -9
   TileLenght: 9
   NumberOfTIles: 10
