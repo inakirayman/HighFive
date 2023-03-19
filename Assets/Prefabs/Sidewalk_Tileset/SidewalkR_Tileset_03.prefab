@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 1625386721084482525}
   - component: {fileID: 3560799010861111063}
   - component: {fileID: 4555282420267831048}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sidewalk_Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 437038333402812833}
   - component: {fileID: 2446680852124722539}
   - component: {fileID: 3434480330322607476}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sidewalk_Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1648975605587921681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SidewalkR_Tileset_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 7642668243422870350}
   - component: {fileID: 5617326908416987012}
   - component: {fileID: 4875467532727031707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sidewalk_Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -797,7 +797,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1129126495800515454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Low Hollow Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
