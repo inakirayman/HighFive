@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5561746441720709035}
   - component: {fileID: 7695452892708129633}
   - component: {fileID: 7248085440099242878}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Sidewalk
   m_TagString: Ground
   m_Icon: {fileID: 0}

@@ -160,6 +160,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: traffic_warning_stand
       objectReference: {fileID: 0}
+    - target: {fileID: 3513832271424301070, guid: 9b84edabc597e594b922183e50cf0c61,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 931fb942046569747891d62a6f3b63ef, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b84edabc597e594b922183e50cf0c61, type: 3}
 --- !u!4 &6940664556722923729 stripped

@@ -225,7 +225,7 @@ MonoBehaviour:
   PlayerHeight: 2
   GroundMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 320
   SlideDuration: 1
   _slidePivot: {fileID: 1631798719}
   _isSliding: 0
