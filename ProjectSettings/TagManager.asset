@@ -7,6 +7,7 @@ TagManager:
   - Obstacles
   - Coins
   - Ground
+  - Launchers
   layers:
   - Default
   - TransparentFX
