@@ -182,7 +182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115412419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.23, z: 3.215}
+  m_LocalPosition: {x: 3, y: 2.23, z: 3.215}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -230,6 +230,10 @@ MonoBehaviour:
   _slidePivot: {fileID: 1631798719}
   _isSliding: 0
   _movement: {x: 0, y: 0, z: 0}
+  _movementLimitsRight: {x: 2, y: 4}
+  _movementLimitsStreet: {x: -1, y: 1}
+  _movementLimitsLeft: {x: -2, y: -4}
+  _currentLane: 0
 --- !u!114 &115412424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,8 +340,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188873917}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1631798719}
@@ -600,7 +604,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102566852}
   m_LocalRotation: {x: 0.14671506, y: -0, z: -0, w: 0.9891788}
-  m_LocalPosition: {x: 0, y: 1.606, z: -5.885}
+  m_LocalPosition: {x: 0, y: 1.29, z: -3.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -664,7 +668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631798718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
