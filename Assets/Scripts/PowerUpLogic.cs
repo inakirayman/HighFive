@@ -4,21 +4,41 @@ using System.Collections.Generic;
 using UnityEditor.ShortcutManagement;
 using UnityEngine;
 
-public class MagnetLogic : MonoBehaviour
+public class PowerUpLogic : MonoBehaviour
 {
     public string powerup = "Magnet";
     private string Coin = "Coins";
 
+    public GameObject _shield;
+
     private bool IsMagnet = false;
+    private bool IsShield = false;
     private float magnetForce = 10f;
-    private int score = 0;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Respawn")
+        if (other.name.ToLower().Contains(powerup))
         {
-            IsMagnet = true;
+            switch (powerup.ToLower())
+            {
+                case "magnet":
+                    IsMagnet = true;
+                    break;
+                case "shield":
+                    IsShield = true;
+                    GetComponent<PlayerControllerUITEST>().IsShielded = IsShield;
+                    break;
+            }
+
             Destroy(other.gameObject);
+        }
+
+        if (IsShield && other.CompareTag("Obstacles"))
+        {
+            IsShield = false;
+            GetComponent<PlayerControllerUITEST>().IsShielded = IsShield;
+            Destroy(other.gameObject);
+            _shield.SetActive(false);
         }
     }
 
@@ -26,6 +46,8 @@ public class MagnetLogic : MonoBehaviour
     {
         if (IsMagnet)
             Magnet();
+        else if (IsShield)
+            _shield.SetActive(true);
     }
 
     private void Magnet()

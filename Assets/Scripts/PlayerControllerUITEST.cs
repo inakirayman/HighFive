@@ -10,6 +10,7 @@ public class PlayerControllerUITEST : MonoBehaviour
     public float JumpForce = 7f; // The force with which the character jumps.
     private Rigidbody _rb; // The rigidbody component attached to the character.
     public bool _isGrounded = false; // Whether or not the character is touching the ground.
+    public bool IsShielded = false;
     private Vector3 _movement;
     public int CoinValue = 1;
     public int Multiplier = 1;
@@ -64,7 +65,7 @@ public class PlayerControllerUITEST : MonoBehaviour
             UIController.Instance.IncreaseCoins(CoinValue);
         }
 
-        if (other.gameObject.CompareTag("Obstacles"))
+        if (!IsShielded && other.gameObject.CompareTag("Obstacles"))
         {
             this.gameObject.SetActive(false);
         }
